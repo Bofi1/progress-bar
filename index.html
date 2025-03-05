@@ -5,19 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font "sigmar" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+
 </head>
 <body class="bg-[yellow]">
 
-    <div class="content-father w-[1200rem] h-[200rem] bg-[white] flex flex-col justify-center items-center">
+    <div class="content-father w-[1200rem] h-[200rem] flex flex-col justify-center items-center">
+        
         <div class="flex z-[2]">
-            <div id="start" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[8px] border-solid"></div>
-            <div id="step-1" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[8px] border-solid"></div>
-            <div id="step-2" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[8px] border-solid"></div>
-            <div id="step-3" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[8px] border-solid"></div>
-            <div id="final" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] border-[#D5D5D5] border-[8px] border-solid"></div>
+            <div id="start" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#008001] border-[15rem] border-solid flex justify-center items-center">
+                <img src="./img/check.png" class="w-[30rem] h-[30rem]" alt="">
+            </div>
+            <div id="step-1" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[15rem] border-solid flex justify-center items-center">
+                <img src="./img/x-gray.png" class="w-[30rem] h-[30rem]" alt="">
+            </div>
+            <div id="step-2" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[15rem] border-solid flex justify-center items-center">
+                <img src="./img/x-gray.png" class="w-[30rem] h-[30rem]" alt="">
+            </div>
+            <div id="step-3" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] mr-[120rem] border-[#D5D5D5] border-[15rem] border-solid flex justify-center items-center">
+                <img src="./img/x-gray.png" class="w-[30rem] h-[30rem]" alt="">
+            </div>
+            <div id="final" class="w-[120rem] h-[120rem] bg-[white] rounded-[100%] border-[#D5D5D5] border-[15rem] border-solid flex justify-center items-center">
+                <img src="./img/x-gray.png" class="w-[30rem] h-[30rem]" alt="">
+            </div>
         </div>
 
-        <div class="bar h-[10rem] w-[970rem] bg-[#D5D5D5] relative top-[-65rem] "></div>
+        <div class="bar w-[970rem] h-[10rem] bg-[#D5D5D5] relative top-[-65rem]"></div>
+        <!-- top-[-65rem] -->
+
+        <style>
+            *{
+                font-family: "Sigmar";
+            }
+
+        </style>
+
+        <div class="w-[1200rem] flex relative left-[80rem]">
+            <span class="text-[#008001] text-[30rem] mr-[160rem]">start</span>
+            <span class="text-[#D5D5D5] text-[30rem] mr-[150rem]">step 1</span>
+            <span class="text-[#D5D5D5] text-[30rem] mr-[150rem]">step 2</span>
+            <span class="text-[#D5D5D5] text-[30rem] mr-[160rem]">step 3</span>
+            <span class="text-[#D5D5D5] text-[30rem]">final</span>
+        </div>
+
+        <!-- <div class="flex mt-[120rem]">
+            <div class="w-[200rem] h-[130rem] bg-[#D3D3D3] mr-[60rem] rounded-[25rem] flex justify-center items-center shadow-xl">
+                <img src="./img/arrow-l.png" class="w-[60rem] h-[60rem]" alt="">
+            </div>
+            <div class="w-[200rem] h-[130rem] bg-[#695ACD] rounded-[25rem] flex justify-center items-center shadow-xl">
+                <img src="./img/arrow-r.png" class="w-[60rem] h-[60rem]" alt="">
+            </div>
+        </div> -->
 
     </div>
 
