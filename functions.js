@@ -1,41 +1,41 @@
 
 function prueba() {
-    console.log(bar[0]);
-    
-    // bar[0].style.width = "242.5rem";
-    // arrowLeftActived()
-    // setTimeout(borderGreen,350)
-    // setTimeout(crossToCheck,400)
-    // setTimeout(showName, 350)
+    findBar()
 }
 
-function arrowLeftActived() {
-    document.getElementById("arrow-left").style.background = "#695ACD";
-    document.getElementById("arrow-left").classList.add("arrow");
+function animation() {
+    borderGreen()
+    crossToCheck()
+    showName()
 }
 
 function borderGreen() {
-    document.getElementById("step-1").style.borderColor = "#008001";
+    borderColor[secuence].style.borderColor = "#008001";
 }
 
 function crossToCheck() {
-    document.getElementById("step-1-img").src = "./img/check.png";
+    imgCheck[secuence].src = "./img/check.png";
 }
 
 function showName() {
-    document.getElementById("name-step-1").style.opacity = "1";
+    document.getElementsByClassName("name-step")[secuence].style.opacity = "1";
 }
 
+let borderColor = document.getElementsByClassName("step")
+let stepName = document.getElementsByClassName("name-step")
+let imgCheck = document.getElementsByClassName("step-img")
 let bar = document.getElementsByClassName("green-bar")
 let secuence;
 
-function findBar() {
-    if (bar[0].style.width != "242.5rem") {
-        secuence = 0
-    } else {
-        alert("tengo 0 width")
-    }
+function barAnimation() {
+    bar[secuence].style.width = "242.5rem";
 }
+
+function findBar() {
+
+}
+
+
 
 let crossLeft = document.getElementById("arrow-right")
 
