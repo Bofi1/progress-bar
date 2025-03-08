@@ -1,12 +1,31 @@
 
 function prueba() {
-    findBar()
+    if (animacionEnCurso == true) { // Verifica si no hay animación en curso
+        animacionEnCurso = true; // Establece la bandera
+        findBar();
+        progress++;
+    }
+
+
+    if (animacionEnCurso == false) { // Verifica si no hay animación en curso
+        animacionEnCurso = true; // Establece la bandera
+        findBar();
+        progress++;
+    }
 }
 
 function animation() {
-    borderGreen()
-    crossToCheck()
-    showName()
+    setTimeout(borderGreen,400)
+    setTimeout(crossToCheck,400)
+    setTimeout(showName,400)
+    barAnimation()
+
+    bar[secuence].addEventListener('transitionend', animacionFinalizada); //
+}
+
+function animacionFinalizada() { //
+    bar[secuence].removeEventListener('transitionend', animacionFinalizada);
+    animacionEnCurso = false; // Restablece la bandera cuando la animación termina
 }
 
 function borderGreen() {
@@ -25,14 +44,31 @@ let borderColor = document.getElementsByClassName("step")
 let stepName = document.getElementsByClassName("name-step")
 let imgCheck = document.getElementsByClassName("step-img")
 let bar = document.getElementsByClassName("green-bar")
-let secuence;
+let progress = 0;
+let secuence = 0;
+let animacionEnCurso = false
 
 function barAnimation() {
     bar[secuence].style.width = "242.5rem";
 }
 
 function findBar() {
-
+    console.log(progress);
+    if (progress == 0) {
+        animation()
+    }
+    if (progress == 1) {
+        secuence++
+        animation()
+    }
+    if (progress == 2) {
+        secuence++
+        animation()
+    }
+    if (progress == 3) {
+        secuence++
+        animation()
+    }
 }
 
 
