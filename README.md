@@ -1,3 +1,3 @@
 take a look online https://bofi1.github.io/progress-bar/
 
-(./img/x-gray.png)
+<img src="./img/cap-bar.png" align="center" style="width: 100%" />
