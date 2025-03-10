@@ -9,6 +9,8 @@ let progress = 0;
 let secuence = -1;
 
 
+
+
 // -------- ASCENDENTE --------
 
 
@@ -42,6 +44,10 @@ function findBar() {
     }
     if (secuence == 3) {
         animation()
+    }
+
+    if (secuence > 3) {
+        secuence = 3
     }
 }
     // --- /funciones principales
@@ -116,6 +122,11 @@ function findBarReverse() {
     }
     if (secuence == 0) {
         animationReverse()
+        arrowLeft.classList.remove("arrow")
+    }
+
+    if (secuence < 0) {
+        secuence = 0
     }
 }
 // --- /funciones principales
